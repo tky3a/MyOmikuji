@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+body {
+  background: #efefef;
+  }
+
+#btn {
+  margin : 30px auto 0;
+  width : 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #EF454A;
+  text-align: center;
+  line-height: 200px;
+  color: #fff;
+  font-size: 42px;
+  font-weight: bold;
+  /* btnに置くとカーソルを変換 */
+  cursor: pointer;
+  /* 透明化: 1.0 〜 0.1 まで指定可能 */
+  opacity: 0.9;
+  /* 影: btnに影を付ける */
+  box-shadow: 0 10px 0 #D1483E;
+  /* 縁(フチ): btnにフチを付ける */
+  border: 3px solid #D1483E;
+  /* btnの文字が選択されないようにする */
+  user-select: none;
+}
+
+#btn:hover {
+  opacity: 1;
+}
+
+/* btnの押し込み: jsで設定したclassに押し込み動作を加える */
+/* 解説: デフォルトbtnのbox-shadow 10pxをpushedでは4pxにすることで押し込んだように見せる　*/
+#btn.pushed {
+  margin-top: 36px;
+  box-shadow: 0 4px 0 #D1483E;
+}
